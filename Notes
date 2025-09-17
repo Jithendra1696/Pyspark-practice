@@ -1,0 +1,9 @@
+Collect
+-------
+->is used to retrieve the action output when you have very small result set
+->calling collect() on an RDD/DataFrame with a bigger result set causes out of memory
+
+collect () vs select ()
+-----------------------
+->select() is a transformation that returns a new DataFrame and holds the columns that are selected
+->collect() is an action that returns the entire data set in an Array to the driver.
